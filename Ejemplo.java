@@ -1,20 +1,27 @@
-# FlowLayout
+//# FlowLayout
 //Repositorio para conocer mas acerca de FlowLayout de la clase swing, Java
 import javax.swing.*;
 import java.awt.*;
 
-class Ejemplo extendes JFrame{
+class Ejemplo extends JFrame{
   JButton primero = new JButton("Primero");
   JButton anterior = new JButton("Anterior");
   JButton siguiente = new JButton("Siguiente");
-  JButton ultimo = new JButton("Ultimo");
+  JButton ultimo = new JButton("último");
   
- probando git en terminal 
-  
- agregando cualquier cosa 
+ Ejemplo(){
+   //Añadimos el formato de FlowLayout al JFrame
+   this.setLayout(new FLowLayout());
+   //Se añaden componentes
+   add(primero);
+   add (anterior);
+   add (siguiente);
+   add (ultimo);
+} 
   
   
   
   
   
   }
+

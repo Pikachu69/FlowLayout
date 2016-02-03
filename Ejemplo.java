@@ -11,15 +11,22 @@ class Ejemplo extends JFrame{
   
  Ejemplo(){
    //Añadimos el formato de FlowLayout al JFrame
-   this.setLayout(new FLowLayout());
+   this.setLayout(new FlowLayout());
    //Se añaden componentes
    add(primero);
    add (anterior);
    add (siguiente);
    add (ultimo);
+
+setTitle("Ejemplos FlowLayout");
+	setSize(400,400);
+setVisible(true);
 } 
+
+public static void main(String[] args){
+new Ejemplo();
   
-  
+}  
   
   
   
